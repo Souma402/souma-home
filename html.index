@@ -1,1 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Souma402 HOMEPAGE</title>
+    <style>
+        body { 
+            font-family: sans-serif; 
+            line-height: 1.6; 
+            max-width: 600px; /* 画像のレイアウトに合わせて幅を少しスリムに設定 */
+            margin: 0 auto; 
+            padding: 20px; 
+            text-align: center;
+            color: #555555;
+        }
+        h1 { 
+            border-bottom: 2px solid #aaaaaa; 
+            padding-bottom: 10px; 
+        }
+        
+        /* HISTORYセクションのスタイリング */
+        .history-section {
+            text-align: left; /* HISTORY内部は左揃え */
+            margin: 40px 0;
+        }
+        .history-title {
+            font-size: 0.85em;
+            letter-spacing: 2px;
+            color: #888888;
+            margin-bottom: 20px;
+            font-weight: normal;
+        }
+        .history-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .history-item {
+            display: flex;
+            padding: 20px 0;
+            border-top: 1px solid #eeeeee; /* 上部のうっすらとした区切り線 */
+            font-size: 0.9em;
+        }
+        .history-year {
+            width: 80px;
+            flex-shrink: 0;
+            color: #999999;
+        }
+        .history-content {
+            flex-grow: 1;
+            color: #555555;
+        }
 
+        /* 詳細（折りたたみ）のスタイリング */
+        details {
+            border-top: 1px solid #eeeeee;
+            padding-top: 10px;
+        }
+        summary {
+            font-size: 0.85em;
+            color: #666666;
+            cursor: pointer;
+            text-decoration: underline; /* 画像に合わせた下線 */
+            list-style: none; /* デフォルトの三角形を非表示 */
+            display: inline-block;
+        }
+        summary::-webkit-details-marker {
+            display: none; /* Chrome/Safariの矢印非表示 */
+        }
+        summary:hover {
+            color: #333333;
+        }
+
+        a {
+            color: #6688aa;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Souma402 HOMEPAGE</h1>
+
+    <h3>ABOUT</h3>
+    <p>AtCoderとScratchでSouma402として活動中</p>
+
+    <!-- HISTORY セクション -->
+    <div class="history-section">
+        <h2 class="history-title">HISTORY</h2>
+
+        <!-- 最新の5件 -->
+        <ul class="history-list">
+            <li class="history-item">
+                <div class="history-year">2026/07</div>
+                <div class="history-content">AtCoderで入茶</div>
+            </li>
+            <li class="history-item">
+                <div class="history-year">2026/06</div>
+                <div class="history-content">パソコン部副部長になる</div>
+            </li>
+            <li class="history-item">
+                <div class="history-year">2026/04</div>
+                <div class="history-content">AtCoderでSouma402として初めてコンテストに参加</div>
+            </li>
+            <li class="history-item">
+                <div class="history-year">2026/02</div>
+                <div class="history-content">Pythonを学び始める</div>
+            </li>
+            <li class="history-item">
+                <div class="history-year">2025/10</div>
+                <div class="history-content">AtCoderと競技プログラミングを知る</div>
+            </li>
+            <li class="history-item">
+                <div class="history-year">2025/05</div>
+                <div class="history-content">パソコン部に入部</div>
+            </li>
+            <li class="history-item">
+                <div class="history-year">2025/04</div>
+                <div class="history-content">中学校に入学</div>
+            </li>
+            
+        </ul>
+
+        <!-- 6件目以降の過去履歴（クリックで展開） -->
+        <details>
+            <summary>過去の詳細</summary>
+            <ul class="history-list">
+                <li class="history-item">
+                    <div class="history-year">2025/02</div>
+                    <div class="history-content">中学受験に合格</div>
+                </li>
+                <li class="history-item">
+                    <div class="history-year">2024/05</div>
+                    <div class="history-content">中学受験を決意する</div>
+                </li>
+                <li class="history-item">
+                    <div class="history-year">2024/02</div>
+                    <div class="history-content">Scratchでの活動がピークを迎える</div>
+                </li>
+                <li class="history-item">
+                    <div class="history-year">2023/03</div>
+                    <div class="history-content">初のゲーム投稿</div>
+                </li>
+                <li class="history-item">
+                    <div class="history-year">2023/03</div>
+                    <div class="history-content">Scratchのアカウントを作成</div>
+                </li>
+                <li class="history-item">
+                    <div class="history-year">2021</div>
+                    <div class="history-content">このころScratchを知り遊ぶようになる</div>
+                </li>
+                <li class="history-item">
+                    <div class="history-year">2012/10</div>
+                    <div class="history-content">Souma402が誕生</div>
+                </li>
+            </ul>
+        </details>
+    </div>
+
+    <h2>リンク</h2>
+    <ul>
+        <li><a href="https://atcoder.jp/users/Souma402" target="_blank">AtCoder</a></li>
+        <li><a href="https://scratch.mit.edu/users/Souma402/" target="_blank">Scratch</a></li>
+    </ul>
+
+</body>
+</html>
